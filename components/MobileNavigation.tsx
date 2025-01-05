@@ -37,13 +37,16 @@ const MobileNavigation = ({
 
   return (
     <header className="mobile-header">
-      <Image
-        src={"/assets/icons/logo-full-brand.svg"}
-        alt="logo"
-        width={120}
-        height={52}
-        className="h-auto"
-      />
+      <div className="flex items-center gap-2 w-[128px]">
+        <Image
+          src={"/assets/icons/logo-brand.svg"}
+          alt="logo"
+          width={52}
+          height={52}
+          className="h-auto"
+        />
+        <h1 className="h2 text-brand">Cloudique</h1>
+      </div>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
           <Image

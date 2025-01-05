@@ -10,6 +10,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Cloudique",
   description: "Cloudique - The only storage solution you need.",
+  icons: "/assets/icons/logo-brand.svg",
 };
 
 export default function RootLayout({

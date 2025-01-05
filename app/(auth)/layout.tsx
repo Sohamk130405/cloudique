@@ -6,14 +6,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div className="flex min-h-screen">
       <section className="hidden w-1/2 items-center justify-center bg-brand p-10 lg:flex xl:w-2/5">
         <div className="flex max-h-[800px] max-w-[430px] flex-col justify-center space-y-12">
-          <Image
-            src="/assets/icons/logo-full.svg"
-            alt="logo"
-            width={224}
-            height={82}
-            className="h-auto"
-          />
-
+          <div className="flex items-center gap-2 w-[224]">
+            <Image
+              src={"/assets/icons/logo.svg"}
+              alt="logo"
+              width={82}
+              height={82}
+              className="h-auto"
+            />
+            <h1 className="h1 text-white">Cloudique</h1>
+          </div>
           <div className="space-y-5 text-white">
             <h1 className="h1">Manage your files the best way</h1>
             <p className="body-1">
@@ -32,13 +34,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <section className="flex flex-1 flex-col items-center bg-white p-4 py-10 lg:justify-center lg:p-10 lg:py-0">
         <div className="mb-16 lg:hidden">
-          <Image
-            src="/assets/icons/logo-full-brand.svg"
-            alt="logo"
-            width={224}
-            height={82}
-            className="h-auto w-[200px] lg:w-[250px]"
-          />
+          <div className="flex items-center gap-2 w-[224px]">
+            <Image
+              src={"/assets/icons/logo-brand.svg"}
+              alt="logo"
+              width={84}
+              height={84}
+              className="h-auto"
+            />
+            <h1 className="h2 text-brand">Cloudique</h1>
+          </div>
         </div>
 
         {children}

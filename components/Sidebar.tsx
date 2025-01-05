@@ -1,5 +1,5 @@
 "use client";
-import {  navItems } from "@/constants";
+import { navItems } from "@/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,23 +7,26 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 interface Props {
-    fullName: string;
-    avatar: string;
-    email: string;
+  fullName: string;
+  avatar: string;
+  email: string;
 }
 
-const Sidebar = ({fullName,avatar,email}:Props) => {
+const Sidebar = ({ fullName, avatar, email }: Props) => {
   const pathname = usePathname();
   return (
     <aside className="sidebar">
       <Link href={"/"}>
-        <Image
-          src={"/assets/icons/logo-full-brand.svg"}
-          alt="logo"
-          width={160}
-          height={50}
-          className="hidden h-auto lg:block"
-        />
+        <div className="flex items-center gap-2 w-[160px]">
+          <Image
+            src={"/assets/icons/logo-brand.svg"}
+            alt="logo"
+            width={50}
+            height={50}
+            className="h-auto"
+          />
+          <h1 className="h2 text-brand">Cloudique</h1>
+        </div>
         <Image
           src={"/assets/icons/logo-brand.svg"}
           alt="logo"
