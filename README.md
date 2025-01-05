@@ -1,4 +1,4 @@
-<div align="center">
+
   <br />
     <a href="https://cloudique.vercel.app" target="_blank">
       <img src="/public/assets/images/banner.jpg" alt="Project Banner">
@@ -117,4 +117,3 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 
 #
-</div>
