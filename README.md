@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://cloudique.vercel.app" target="_blank">
-      <img src="/assets/images/banner.jpg" alt="Project Banner">
+      <img src="/public/assets/images/banner.jpg" alt="Project Banner">
     </a>
   <br />
 
