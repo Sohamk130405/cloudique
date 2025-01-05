@@ -8,7 +8,7 @@ import { constructFileUrl, getFileType, parseStringify } from "@/lib/utils";
 import { revalidatePath } from "next/cache";
 import { getCurrentUser } from "@/lib/actions/user.actions";
 
-const handleError = (error: unknown, message: string) => {
+export const handleError = (error: unknown, message: string) => {
   console.log(error, message);
   throw error;
 };
@@ -61,7 +61,7 @@ export const uploadFile = async ({
   }
 };
 
-const createQueries = (
+export const createQueries = (
   currentUser: Models.Document,
   types: string[],
   searchText: string,
@@ -193,7 +193,6 @@ export const deleteFile = async ({
   }
 };
 
-// ============================== TOTAL FILE SPACE USED
 export async function getTotalSpaceUsed() {
   try {
     const { databases } = await createSessionClient();
