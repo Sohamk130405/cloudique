@@ -16,7 +16,7 @@
 
    <div align="center">
     I developed this project to practice building production-ready software.
-</div>
+   </div>
 
 ## 📋 <a name="table">Table of Contents</a>
 
@@ -117,3 +117,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 
 #
+</div>
